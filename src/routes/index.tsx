@@ -422,7 +422,7 @@ function Index() {
               </div>
             ))}
           </div>
-          <div className="mt-10 border border-border bg-industrial p-6 font-mono text-sm leading-relaxed text-safety-yellow">
+          <div className="mt-10 whitespace-pre-line border border-border bg-industrial p-6 font-mono text-sm leading-relaxed text-safety-yellow">
             <span className="mr-3 text-white/40">// try it:</span>
             const userAge = prompt("Enter your age:");
             {"\n"}
