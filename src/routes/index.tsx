@@ -5,6 +5,7 @@ import kirstenPhoto from "@/assets/image-3.png.asset.json";
 import kimPhoto from "@/assets/image-4.png.asset.json";
 import eljanrickPhoto from "@/assets/image-5.png.asset.json";
 import haeleyPhoto from "@/assets/image-6.png.asset.json";
+import andrewPhoto from "@/assets/andrew-francisco.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -63,6 +64,11 @@ const team = [
     name: "Haeley Faye Esguerra",
     roles: "Scribe",
     photo: haeleyPhoto,
+  },
+  {
+    name: "Andrew John Francisco",
+    roles: "Scribe",
+    photo: andrewPhoto,
   },
 ];
 
@@ -439,7 +445,7 @@ function Index() {
           <h2 className="mb-12 text-center text-3xl font-extrabold uppercase italic">
             Team Credits
           </h2>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
             {team.map((member) => (
               <div key={member.name} className="text-center">
                 <img
