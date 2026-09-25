@@ -429,12 +429,15 @@ function Index() {
             ))}
           </div>
           <div className="mt-10 whitespace-pre-line border border-border bg-industrial p-6 font-mono text-sm leading-relaxed text-safety-yellow">
-            <span className="mr-3 text-white/40">// try it:</span>
-            const userAge = prompt("Enter your age:");
-            {"\n"}
-            if (userAge &gt;= 14) {"{"} document.getElementById("answer").innerText =
-            "Safety check passed"; {"}"} else {"{"} alert("Ask a trained person for
-            help"); {"}"}
+            {`// try it:
+
+const userAge = Number(prompt("Enter your age:"));
+
+if (userAge >= 16) {
+  document.getElementById("answer").innerText = "Safety check passed";
+} else {
+  alert("Ask a trained person for help");
+}`}
           </div>
         </div>
       </section>
